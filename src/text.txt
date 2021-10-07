@@ -1,0 +1,104 @@
+
+ 
+
+  
+   
+ /* 736 */
+ @media screen and (max-width: 710px) {
+  .transaction-body {
+    margin-left: 250px;
+    width: 55%;
+}
+  .card-transaction {
+    width: 93%;
+}
+  .auth-design{
+  display:none;
+}
+.auth-content{
+  justify-content: center;
+  width: 100%;
+ }
+ .auth-content h2{
+   font-size: 18px;
+ }
+ .form-input{
+  width: 570px !important;
+  margin-left: 70px;
+}
+
+.text-muted{
+  margin-left: 300px;
+}
+ }
+ 
+@media screen and (max-width: 678px) {
+  .transaction-body {
+    margin-left: 250px;
+    width: 60%;
+}
+  .card-transaction {
+    width: 100%;
+}
+}
+
+
+ @media screen and (max-width: 624px) {
+  .form-input{
+    width: 490px !important;
+    margin-left: 70px;
+  }
+  .text-muted{
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 544px) {
+  .form-input{
+    width: 440px !important;
+    margin-left: 70px;
+  }
+  
+  .text-muted{
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .form-input{
+    width: 370px !important;
+    margin-left: 40px;
+  }
+  
+  .text-muted{
+    margin-left: 130px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .form-input{
+    width: 340px !important;
+    margin-left: 40px;
+  }
+  
+  .text-muted{
+    margin-left: 130px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .form-input{
+    width: 340px !important;
+    margin-left: 20px;
+  }
+  
+  .text-muted{
+    margin-left: 130px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form-input{
+    width: 310px !important;
+    margin-left: 5px;
+  }
+  
+  .text-muted{
+    margin-left: 90px;
+  }
+}
