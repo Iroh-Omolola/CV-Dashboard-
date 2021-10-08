@@ -6,21 +6,24 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Graphik', sans-serif;
+  width: 100%vw;
+  height:100%vh;
+  
                                                 
 }
 body{
   font-family: 'Graphik', sans-serif;
   width: 100%;
-  height: 100%;
+  height:100%;
                                                 
 }
 .main-body{
   background:  #E5E5E5;
-  height: fit-content
+  height: fit-content;
  }
  .iconss{
   cursor: pointer;
-  margin-left: 450px;
+  margin-left: 750px;
   font-size: 2.5vmax;
   color: rgb(58, 58, 58);
   visibility: hidden;
@@ -32,6 +35,7 @@ body{
 .sub-body{
   display: flex;
   flex-wrap: nowrap;
+  overflow-x:hidden;
 }
 .nav{
   border-bottom: none;
@@ -50,16 +54,16 @@ body{
 }
 .mobile-high{
   position:relative;
-  transition: all 2s;
+  transition: all 0.15s;
   width: 240px;
-  height: 600px !important;
+  height: 100% !important;
   background: white;
   display: none;
-  left:-260px;
-  z-index: 1;
+  left:-640px;
+  z-index: 9;
 }
 .shownav{
-  left:0px;
+  left:-400px;
 }
 .nav-item{
   color: #262626 !important;
@@ -114,14 +118,13 @@ color: #888888;
 }
 .Right-side-bar{
   margin-left: -430px;
-  overflow-x: hidden;
 }
 
  .App{
   background: #FFFFFF;
   border-radius: 10px;
   border: none !important;
-  width:110%;
+  width:100%;
   height: 450px;
   padding-left: 20px;
   padding-right: 20px;
@@ -166,7 +169,6 @@ color: #888888;
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 30px;
-  width: 110%;
   background: #FFFFFF;
   border-radius: 10px;
 }
@@ -400,975 +402,566 @@ background-size: cover;
  text-align: center;
  font-size: 18px;
 }
+.dashboard{
+  width:100% !important;
+  overflow-x:hidden;
+}
 /* Responsiveness */
 @media screen and (max-width: 1700px) {
-.dashboard{
-  width: 98%;
-}
-.rightHand-body{
-  margin-left:-50px;
-}
   .logo{
     margin-left: 30px;
     margin-top: 5px;
   }
-  .App{
-    width:157% !important;
-   }
-   .sales-chart{
-    width: 160% !important;
+  .dashboard{
+    width:100% !important;
+    overflow-x:hidden;
   }
-  .chart-icon{
-   width: 120% !important;
-    
-  }
-  .calc-card{
-    width: 490px !important;
-    margin-left: -250px;
-  }
-  .chart-body{
-   justify-content: space-between !important;
-  }
-  .calculations{
-    width: 240px !important;
-  }
-  .transaction-body{
-    width: 80%;
-  }
-  .mini-card-calc{
-    width: 420px;
-  }
-  .form-input {
-    width: 850px !important;
+  .Right-side-bar {
+    margin-left: -460px;
+    overflow-x: hidden;
+    width: 75%;
 }
-  .text-muted{
-  margin-left: 600px;
+.calc-card {
+  width: 360px;
 }
- }
- @media screen and (max-width: 1661px) {
-  .form-input {
-    width: 830px !important;
+.calculations {
+  margin-left: 270px;
 }
- }
- @media screen and (max-width: 1641px) {
- .mini-card-calc{
-  width: 410px;
+.byQPbT {
+  width: 100% !important;
+}
+.logout{
+  margin-top:100px;
 }
 }
-@media screen and (max-width: 1633px) {
-  .App{
-    width:147% !important;
-   }
-  
-   .sales-chart{
-    width: 150% !important;
-  }
-  .transaction-body{
-    width: 78%;
-  }
- }
- @media screen and (max-width: 1620px) {
-  .form-input {
-    width: 800px !important;
-}
- }
- 
- @media screen and (max-width: 1615px) {
-  .mini-card-calc{
-   width: 390px;
- }
- .rightHand-body{
-  margin-left:-55px;
-}
- }
- @media screen and (max-width: 1582px) {
-  .mini-card-calc{
-   width: 370px;
- }
- }
- @media screen and (max-width: 1561px) {
-  .form-input {
-    width: 780px !important;
-}
- }
- @media screen and (max-width: 1553px) {
- 
-  .App{
-    width:137% !important;
-   }
-   .sales-chart{
-    width: 140% !important;
-  }
-  .calc-card{
-    width: 400px !important;
-    margin-left: -160px;
-  }
- }
- @media screen and (max-width: 1523px) {
-  .form-input {
-    width: 750px !important;
-}
-.text-muted{
-  margin-left: 500px;
-}
- }
- @media screen and (max-width: 1495px) {
-  .mini-card-calc{
-   width: 350px;
- }
- }
- @media screen and (max-width: 1468px) {
-  
-  .App{
-    width:128% !important;
-   }
-   .sales-chart{
-    width: 130% !important;
-  }
-  .calc-card{
-    width: 350px !important;
-    margin-left: -130px;
-  }
-  .chart-icon{
-    width: 100% !important;
-  }
-    .form-input {
-      width: 720px !important;
-  }
- }
- @media screen and (max-width: 1428px) {
-  .mini-card-calc{
-   width: 330px;
- }
- }
- @media screen and (max-width:1402px){
-  .transaction-body{
-    width: 76%;
-  }
-    .mini-card-calc{
-     width: 310px;
-   }
-   .form-input {
-    width: 690px !important;
-}
- }
- @media screen and (max-width: 1389px) {
-  
-  .App{
-    width:123% !important;
-   }
-   .sales-chart{
-    width: 125% !important;
-  }
-  .calc-card{
-    width: 350px !important;
-    margin-left: -100px;
-  }
-  .chart-icon{
-    width: 90% !important;
-  }
- }
- @media screen and (max-width:1374px){
-   .mini-card-calc{
-      width: 310px;
-    }
-    .rightHand-body{
-     margin-left:-70px;
-   }
-  }
-  @media screen and (max-width:1366px){
-    .App{
-      width:112% !important;
-     }
-     .sales-chart{
-      width: 114% !important;
-    }
-  }
-  @media screen and (max-width:1349px){
-   .form-input {
-     width: 670px !important;
-  }
-  .text-muted{
-    margin-left: 450px;
-  }
-  .rightHand-body{
-    margin-left:-60px;
-  }
-}
-  @media screen and (max-width: 1312px) {
-   .chart-icon{
-     width: 80% !important;
-      
-    }
-   .App{
-     width:118% !important;
-    }
-    .sales-chart{
-     width: 118% !important;
-   }
-   .mini-card-calc{
-     width: 290px;
-   }
-   .rightHand-body{
-     margin-left:-80px;
-   }
-  }
-  @media screen and (max-width:1307px){
-    .sales-chart{
-      width: 120% !important;
-    }
-  }
-  @media screen and (max-width:1303px){
-    .transaction-body{
-      width: 73%;
-    }
-    .form-input {
-      width: 630px !important;
-  }
-   }
-   @media screen and (max-width:1281px){
-    .mini-card-calc{
-     width: 275px;
-   }
-   .sales-chart{
-    width: 115% !important;
-  }
-  .App{
-    width:113% !important;
-   }
-   }
-    @media screen and (max-width: 1228px) {
-     .App{
-       width:110% !important;
-      }
-      .sales-chart{
-       width: 112% !important;
-     }
-     .calc-card{
-       width: 300px !important;
-       margin-left: -80px;
-     }
-     .chart-icon{
-       width: 80% !important;
-     }
-     
-    }
-    @media screen and (max-width: 1227px){
-      .chart-icon{
-        width: 90% !important;
-      }
-     .calc-card{
-       width: 200px !important;
-        height: 5px !important;
-        padding: 0px !important;
-        margin-top: 40px;
-     }
-     .card-title{
-       font-size: 12px !important;
-     }
-     .card-text{
-       font-size: 9px !important;
-     }
-     .trending-icon{
-       width: 18px !important;
-       margin-top: 1px !important;
-     }
-     .sales-header{
-       width: 95%;
-     }
-     .calculations{
-       margin-bottom: 60px !important;
-     }
-     .calc-card{
-       width: 250px !important;
-       margin-left: -50px;
-     }
-     .chart-icon{
-       width: 80% !important;
-     }
-     .form-input {
-       width: 600px !important;
-   }
-   .text-muted{
-     margin-left: 400px;
-   }
-    }
-    @media screen and (max-width:1177px) {
-     .form-input {
-       width: 590px !important;
-   }
-    }
-    @media screen and (max-width:1160px) {
-     .transaction-body{
-       width: 70%;
-     }
-     .App{
-      width:106% !important;
-     }
-     .sales-chart{
-      width: 108% !important;
-    }
-    }
-    @media screen and (max-width:1131px) {
-     .form-input {
-       width: 570px !important;
-   }
-   .text-muted{
-     margin-left: 350px;
-   }
-   .Right-side-bar {
-    margin-left: -360px;
-  }
-    }
-    @media screen and (max-width:1090px) {
-     .form-input {
-       width: 540px !important;
-   }
-   .Right-side-bar {
-    margin-left: -330px;
-  }
-   
-    }
-    @media screen and (max-width:1041px) {
-     .form-input {
-       width: 520px !important;
-   }
-   .text-muted{
-     margin-left: 300px;
-   }
-    }
-    @media screen and (max-width:1041px) {
-      .form-input {
-        width: 510px !important;
-    }
-    .text-muted{
-      margin-left: 300px;
-    }
-     }
-     @media screen and (max-width:1028px) {
-      .dashboard{
-        margin-left: 20px !important;
-        width: 95% !important;
-        }
-      .App{
-          margin-left: 20px !important;
-          width: 103% !important;
-        }
-        
-     }
-     
-    @media screen and (max-width:1022px) {
-      .transaction-body{
-        width: 67%;
-      }
-     }
-     @media screen and (max-width:992px) {
-      .form-input {
-        width: 490px !important;
-    }
-     }
-     @media screen and (max-width: 988px) {
-      .dashboard{
-       margin-left: 50px !important;
-       }
-       .chart-icon{
-        width: 80% !important;
-      }
-       .sales-chart{
-        width: 104% !important;
-      }
-      .calc-card{
-        margin-left: -20px;
-      }
-      .App{
-        margin-left: 50px !important;
-        width: 99% !important;
-      }
-     }
-     @media screen and (max-width: 975px) {
-       .chart-icon{
-        width: 78% !important;
-      }
-     }
-     @media screen and (max-width:948px) {
-      .form-input {
-        width: 470px !important;
-    }
-      .text-muted{
-        margin-left: 260px;
-      }
-     }
-     @media screen and (max-width: 952px){
-    .dashboard {
-        margin-left: 60px !important;
-        width: 93% !important;
-    }
-    .App{
-      margin-left: 65px !important;
-      width: 96% !important;
-     
-    }
-    }
-     @media screen and (max-width: 927px) {
-      .transaction-body{
-        width: 63%;
-      } 
-    }
-    @media screen and (max-width: 910px) {
-      .mini-card-calc{
-        width: 160px;
-      }
-    }
-    @media screen and (max-width: 906px) {
-      
-      .transaction-body{
-        width: 60%;
-        margin-left: -100px;
-      }
-      .dashboard {
-        margin-left: 120px !important;
-        width: 85% !important;
-    }
-    .App{
-      margin-left: 115px !important;
-      width: 89% !important;
-    }
-    .transaction-details{
-      width: 94%;;
-    }
-    .transaction-details-body{
-      margin-left: 280px;
-    }
-    .rls3{
-      margin-bottom: 80px;
-    } 
-    }
-    
-     @media screen and (max-width: 904px) {
-      .dashboard {
-        margin-left: 630px !important;
-        height: 30% !important;
-        width: 50% !important;
-    }
-       .App {
-      margin-left: 630px !important;
-      width: 52% !important;
-    }
-       .transaction-body{
-        width: 60% !important;
-        margin-left: 279px;
-        padding: 3px;
-      }
-      .card-transaction {
-        width: 100%;
-    }
-      .chart-icon {
-        width: 70% !important;
-        height: 558px;
-        margin-top: -140px;
-      }
-      .calculations {
-        margin-left: 15px;
-      }
-      .sales-chart{
-        height: 350px;
-      }
-      .card{
-        width: 180px !important;
-        margin-left: 50px !important;
-      }
-      .calculation-chart{
-        margin-top: -19px;
-        margin-left: 40px;
-      }
-      .hHSTiF {
-        padding: 0px;
-        width: 500px !important;
-     }
-     .sales-text{
-       font-size: 12px;
-     }
-     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-       width: 0px !important;
-     }
-     .mini-card-calc{
-      /* width: 140px !important; */
-    }
-    .agent-calc-board {
-        margin-left: -50px !important;
-        width: 160px;
-    
-    }
-     }
-     @media screen and (max-width: 900px) {
-      .hHSTiF {
-        width: 450px;
-     }
-      .form-input {
-        width: 450px !important;
-    }
-    }
-    @media screen and (max-width: 883px) {
-      .form-input {
-        width: 430px !important;
-    }
-    .text-muted{
-      margin-left: 260px;
-    }
-    }
-     @media screen and (max-width:879px) {
-      .card{
-        width: 180px !important;
-        margin-left: 50px !important;
-      }
-      .dashboard {
-        margin-left: 400px !important;
-        height: 30% !important;
-        width: 60%;
-    }
-      .sales-chart {
-          width: 119% !important;
-      }
-      .hHSTiF {
-        width: 450px !important;
-     }
-    .App{
-      margin-left: 400px !important;
-      width: 60% !important;
-      padding: 0px !important;
-      padding-left: 0px;
-    }
-    .Right-side-bar{
-      margin-left: -70px;
-    }
-     }
-     
-     @media screen and (max-width:874px) {
-      .transaction-body{
-        width: 60% !important;
-        margin-left: 255px;
-        padding: 3px;
-      }
-       
-     }
-     @media screen and (max-width:858px) {
-      .App{
-        padding: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-      .form-input {
-          width: 430px !important;
-      }
-      .text-muted{
-        margin-left: 230px;
-      }
-      }
-      @media screen and (max-width: 852px) {
-        .dashboard {
-          margin-left: 400px !important;
-          height: 30% !important;
-          width: 60%;
-      }
-        .App{
-        margin-left: 400px !important;
-        width: 60% !important;
-        padding: 0px !important;
-        padding-left: 0px;
-       }
-         .chart-icon{
-          width: 120% !important;
-          height: 557px;
-          margin-top: -150px;
-        }
-         .sales-chart{
-          width: 120% !important;
-          padding: 10px !important;
-          height: 300px;
-        }
-        .calculation-chart{
-          margin-top: -19px;
-          margin-left: 60px !important;
-        }
-      }
-      
-      @media screen and (max-width: 844px) {
-        .App{
-          margin-left:400px !important;
-          padding-left: 0px !important;
-        }
-       }
-       @media screen and (max-width:832px) {
-        .transaction-body{
-          margin-left: 200px;
-          padding: 3px;  
-        }
-        .card-transaction{
-          width: 100%;
-        } 
-       }
-       @media screen and (max-width: 824px) {
-       .form-input {
-        width: 410px !important;
-      }
-        .text-muted{
-        margin-left: 200px;
-        }
-       }
-       @media screen and (max-width: 820px) {
-        .App{
-          padding-left:0px !important;
-        }
-        .transaction-body{
-          margin-left: 230px;
-        }
-      .card-transaction {
-          width: 100%;
-      }
-       }
-       @media screen and (max-width: 804px) {
-        .form-input {
-         width: 400px !important;
-       }
-       .text-muted{
-       margin-left: 200px;
-       }
-        }
-       @media screen and (max-width: 786px) {
-        .dashboard {
-          margin-left: 400px !important;
-          height: 30% !important;
-          width: 47% !important;
-      }
-        .App{
-        margin-left: 400px !important;
-        width: 57% !important;
-        padding: 0px !important;
-        padding-left: 0px;
-       }
-        .hHSTiF {
-        width: 380px !important;
-      }
-      }
 
-      @media screen and (max-width: 785px){
-        .dashboard {
-          margin-left: 160px !important;
-          height: 30% !important;
-          width: 70% !important;
-      }
-        .App{
-        margin-left: 160px !important;
-        width: 84% !important;
-        padding: 0px !important;
-        padding-left: 0px;
-       }
-        .high {
-          display: none ;
-        }
-        .mobile-high {
-          display: block;
-          margin-left:-45px;
-        }
-        .hamburger{
-          visibility: visible;
-        }
-        .hHSTiF {
-          width: 630px !important;
-       }
-       .transaction-body{
-        margin-left: 10px;
-       }
-       .card-transaction {
-        width: 150%;   
-    }
-      }
-     @media screen and (max-width: 773px){
-      .hHSTiF {
-        width: 560px !important;
-     }
-    }
-    @media screen and (max-width: 768px) {
-      .form-input {
-       width: 380px !important;
-      }
-     .text-muted{
-     margin-left: 180px;
-     }
-    }
-    @media screen and (max-width: 739px) {
-      .form-input {
-       width: 370px !important;
-     }
-     .text-muted{
-     margin-left: 150px;
-     }
-      }
-      @media screen and (max-width: 715px) {
-        .form-input {
-         width: 355px !important;
-       }
-       .text-muted{
-       margin-left: 150px;
-       }
-        }
-        @media screen and (max-width: 710px) {
-          .auth-design{
-          display:none;
-        }
-        .auth-content{
-          justify-content: center;
-          width: 100%;
-         }
-         .auth-content h2{
-           font-size: 18px;
-         }
-         .form-input{
-          width: 570px !important;
-          margin-left: 70px;
-        }
-        
-        .text-muted{
-          margin-left: 300px;
-        }
-        
-         }
-    @media screen and (max-width: 699px){
-      .hHSTiF {
-        width: 520px !important;
-     }
-    }
-    @media screen and (max-width: 653px){
-      .hHSTiF {
-        width: 480px !important;
-     }
-    }
-      @media screen and (max-width: 633px){
-        .iconss{
-          margin-left: 400px;
-        }
-      }
-      @media screen and (max-width: 629px){
-       
-        .hHSTiF {
-          width: 480px !important;
-       }
-      }
-      @media screen and (max-width: 624px) {
-        .form-input{
-          width: 490px !important;
-          margin-left: 70px;
-        }
-        .text-muted{
-          margin-left: 300px;
-        }
-      }
-      @media screen and (max-width: 607px){
-        .dashboard {
-          margin-left: 145px !important;
-      }
-        .App{
-        margin-left: 145px !important;
-        width: 84% !important;
-       }
-        .hHSTiF {
-          width: 470px !important;
-       }
-      }
-      @media screen and (max-width: 595px){
-      .hHSTiF {
-        width: 440px !important;
-     }
-    }
-      @media screen and (max-width: 579px){
-        .iconss{
-          margin-left: 360px;
-        }
-        .mobile-user-profile{
-          margin-left:-350px !important;
-        }
-        .hHSTiF {
-          width: 440px !important;
-       }
-       .iconss{
-        font-size: 3.5vmax;
-      }
-      }
-      @media screen and (max-width: 575px){
-        
-        .hHSTiF {
-          width: 440px !important;
-       }
-      }
-      @media screen and (max-width: 544px) {
-        .form-input{
-          width: 440px !important;
-          margin-left: 70px;
-        }
-        
-        .text-muted{
-          margin-left: 200px;
-        }
-      }
-      @media screen and (max-width: 541px){
-        .mobile-user-profile{
-          margin-left:-300px !important;
-        }
-        
-      }
-      @media screen and (max-width: 537px){
-        .iconss{
-          margin-left: 300px;
-        }
-        
-      }
-      @media screen and (max-width: 497px){
-        .mobile-user-profile{
-          margin-left:-250px !important;
-        }  
-      }
-      @media screen and (max-width: 480px){
-        .iconss{
-          margin-left: 280px;
-        }
-        .chart-body{
-          flex-direction:column;
-          height:fit-content;
-        }
-        .chart-icon{
-          width: 80% !important;
-          height: 550px;
-          margin-left: 20px;
-        }
-        .sales-chart{
-          height: fit-content;
-        }
-        .calculation-chart {
-          margin-top: -190px;
-          margin-left: 10px !important;
-          width: 400px;
-      }
-      }
-      @media screen and (max-width: 457px){
-        .iconss{
-          margin-left: 250px;
-        }
-        .dashboard {
-          width: 63% !important;
-      }
-        .App{
-        width: 75% !important;
-       }
-       .calculation-chart {
-        margin-left: 0px !important;
-    }
-      }
-      @media screen and (max-width: 445px) {
-        .form-input{
-          width: 370px !important;
-          margin-left: 40px;
-        }
-        
-        .text-muted{
-          margin-left: 130px;
-        }
-      }
-      @media screen and (max-width: 435px){
-        .iconss{
-          margin-left: 200px;
-        }
-        .dashboard {
-          margin-left: 130px !important;
-      }
-        .App{
-        margin-left: 130px !important;
-        width: 77% !important;
-       }
-       .mobile-user-profile{
-        margin-left:-200px !important;
-      } 
-      }
-      @media screen and (max-width: 425px) {
-        .form-input{
-          width: 340px !important;
-          margin-left: 40px;
-        }
-        
-        .text-muted{
-          margin-left: 130px;
-        }
-      }
-      @media screen and (max-width: 396px){
-        .iconss{
-          margin-left: 180px;
-        }
-        .dashboard {
-          width: 58% !important;
-      }
-        .App{
-        width: 68% !important;
-       }
-       .mobile-user-profile{
-        margin-left:-180px !important;
-      } 
-      }
-      @media screen and (max-width: 375px){
-        .iconss{
-          margin-left: 150px;
-        }
-        .mobile-user-profile{
-          margin-left:-140px !important;
-        } 
-          .form-input{
-            width: 340px !important;
-            margin-left: 20px;
-          }
-          
-          .text-muted{
-            margin-left: 130px;
-          }
-        
-      }
-      @media screen and (max-width: 358px){
-        .iconss{
-          margin-left: 150px;
-        }
-        .dashboard {
-          width: 50% !important;
-      }
-        .App{
-        width: 60% !important;
-       }
-       .mobile-user-profile{
-        margin-left:-140px !important;
-      } 
-      .mobile-user-profile{
-        margin-left:-120px !important;
-      } 
-      }
-      @media screen and (max-width: 330px){
-        .iconss{
-          margin-left: 120px;
-        }
-        .calculation-chart {
-          margin-left: -30px !important;
-      }
-      .mobile-user-profile{
-        margin-left:-100px !important;
-      } 
-      }
-      @media screen and (max-width: 320px) {
-        .form-input{
-          width: 310px !important;
-          margin-left: 5px;
-        }
-        .card-transaction {
-          width: 140%;
-      }
-      .card-transaction .hHSTiF {
-          width: 240px !important;
-      }
-        .text-muted{
-          margin-left: 90px;
-        }
-      }
+@media screen and (max-width: 1646px) {
+  .calculations {
+    margin-left: 240px;
+  }
+  .Right-side-bar {
+    margin-left: -485px;
+}
+}
+
+@media screen and (max-width: 1605px) {
+  .calculations {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 1549px) {
+  .calculations {
+    margin-left: 160px;
+  }
+}
+@media screen and (max-width: 1438px) {
+  .calculations {
+    margin-left: 130px;
+  }
+}
+
+@media screen and (max-width: 1415px){
+  .dashboard {
+    width: 96% !important;
+    overflow-x: hidden;
+}
+.calc-card {
+  width: 300px;
+}
+.App {
+  width: 96%;
+}
+}
+@media screen and (max-width: 1372px){
+  .calculations {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 1318px){
+  .calculations {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 1300px){
+  .calculations {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1226px){
+  .dashboard {
+    width: 92% !important;
+}
+.App {
+  width: 92%;
+}
+  .calculations {
+    margin-left: 70px;
+  }
+  .chart-icon {
+    width: 400px;
+  }
+  .calc-card {
+    width: 270px;
+    height: 32px;
+}
+
+}
+@media screen and (max-width: 1190px){
+ 
+  .calculations {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 1168px){
+ 
+  .calculations {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1128px){
+  .chart-icon {
+    width: 350px;
+}
+.calc-card {
+  width: 220px;
+  height: 30px;
+  margin-top: 24px;
+}
+.calc-card.calc-card2.card {
+  margin-top: -15px;
+} 
+.calc-card.calc-card3.card {
+  margin-top: -15px;
+}
+.card-body{
+  padding-bottom:5px;
+}
+
+.card-title {
+  font-size: 16px;
+}
+.trending-icon {
+  width: 25px;
+  margin-top: -27px;
+}
+.calculations {
+  margin-left: 80px;
+}
+}
+@media screen and (max-width: 1075px){
+  .calculations {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 1033px){
+  .calculations {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 988px){
+  .calculations {
+    margin-left: 3px;
+  }
+  .high {
+    display: none ;
+  }
+  .mobile-high {
+    display: block;
+    
+  }
+  .hamburger{
+    visibility: visible;
+  }
+  .dashboard{
+    width:100% !important;
+    overflow-x:hidden; 
+  }
+  .App{
+    width:100% !important;
+  }
+  .Right-side-bar {
+    margin-left: -760px;
+    overflow-x: hidden;
+    width: 92%;
+}
+.chart-icon{
+  width: 481px;
+  height: 257px;
+  margin-right: 10px;
+}
+.calc-card {
+  width: 270px;
+  margin-top:55px;
+}
+.calculations {
+  margin-left: 50px;
+}
+}
+
+@media screen and (max-width: 946px){
+  .calculations {
+    margin-left: 20px;
+  }
+  .iconss{
+    margin-left: 700px;
+  }
+}
+@media screen and (max-width: 912px){
+  .calculations {
+    margin-left: 50px;
+  }
+  .iconss{
+    margin-left: 660px;
+  }
+  .chart-icon{
+    width: 400px;
+    height: 257px;
+  }
+  .calc-card {
+    width: 270px;
+    margin-top:40px;
+  }
+}
+@media screen and (max-width: 852px){
+  
+  .iconss{
+    margin-left: 620px;
+  }
+  .calc-card {
+    width: 220px;
+    margin-top:40px;
+  }
+}
+
+@media screen and (max-width: 826px){
+  .dashboard{
+    width:95% !important;
+    overflow-x:hidden; 
+  }
+  .App{
+    width:95% !important;
+  }
+  .chart-icon{
+    width: 380px;
+    height: 257px;
+    margin-left:-20px;
+  }
+  .Right-side-bar {
+    margin-left: -750px;
+}
+  .iconss{
+    margin-left: 590px;
+    font-size: 3.5vmax;
+  }
+  .calc-card {
+    width: 200px;
+  }
+  .calculations {
+    margin-left: 30px;
+  }
+  .card-title {
+    font-size: 15px;
+}
+  .card-text {
+    font-size: 12px;
+  }
+  .trending-icon {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 782px){
+  
+  .iconss{
+    margin-left: 550px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .chart-icon{
+    width: 350px;
+  }
+  .iconss{
+    margin-left: 530px;
+  }
+}
+@media screen and (max-width: 716px){
+  .chart-icon{
+    width: 310px;
+  }
+  .iconss{
+    margin-left: 480px;
+  }
+}
+@media screen and (max-width: 670px){
+  .chart-icon{
+    width: 300px;
+  }
+  .iconss{
+    margin-left: 440px;
+  }
+  .calculations {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 670px){
+  .chart-icon{
+    width: 300px;
+  }
+  .iconss{
+    margin-left: 410px;
+  }
+  .calculations {
+    margin-left: 0px;
+  }
+  .calc-card {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 675px){
+  .chart-body {
+    flex-direction: column;
+    justify-content:center;
+}
+  .chart-icon{
+    width: 400px;
+    margin:0 auto;
+  }
+  .calc-card {
+    width: 300px;
+    margin:0 auto;
+  }
+}
+@media screen and (max-width: 582px){
+  .iconss{
+    margin-left: 360px;
+  }
+}
+@media screen and (max-width: 575px){
+  .iconss{
+    margin-left: 360px;
+  }
+  .mobile-user-profile{
+    margin-left:-360px;
+  }
+  .logout{
+    margin-left:-420px;
+  }
+}
+
+@media screen and (max-width: 567px){
+  .mobile-user-profile{
+    margin-left:-340px;
+  }
+  .logout{
+    margin-left:-410px;
+  }
+}
+@media screen and (max-width: 543px){
+  .iconss{
+    margin-left: 320px;
+  }
+  .mobile-user-profile{
+    margin-left:-320px;
+  }
+  .logout{
+    margin-left:-380px;
+  }
+  .logo{
+    margin-left:23px;
+  }
+}
+@media screen and (max-width: 521px){
+  
+  .iconss{
+    margin-left: 290px;
+  }
+  .chart-icon{
+    width: 350px;
+    margin:0 auto;
+  }
+  .Right-side-bar {
+    margin-left: -770px;
+}
+}
+@media screen and (max-width: 513px){
+  
+  .mobile-user-profile{
+    margin-left:-300px;
+  }
+  .logout{
+    margin-left:-355px;
+  }
+}
+@media screen and (max-width: 493px){
+  .chart-icon{
+    width: 350px;
+    margin-left:-20px;
+  }
+  .iconss{
+    margin-left: 270px;
+  }
+  .mobile-user-profile{
+    margin-left:-280px;
+  }
+  .logout{
+    margin-left:-335px;
+  }
+}
+@media screen and (max-width: 471px){
+  
+  .mobile-user-profile{
+    margin-left:-250px;
+  }
+  .logout{
+    margin-left:-315px;
+  }
+}
+@media screen and (max-width: 451px){
+  .iconss{
+    margin-left: 250px;
+  }
+}
+@media screen and (max-width: 441px){
+ 
+  .chart-icon{
+    width: 300px;
+    margin-left:-10px; 
+  }
+  .Right-side-bar {
+    margin-left: -770px;
+}
+  .logo{
+    margin-left:30px;
+  }
+  .calc-card {
+    width: 250px;
+    margin:0 auto;
+  }
+  .mobile-user-profile{
+    margin-left:-220px;
+  }
+  .logout{
+    margin-left:-300px;
+  }
+}
+@media screen and (max-width: 427px){
+  .iconss{
+    margin-left: 230px;
+  }
+  .chart-icon{
+    margin-left:-20px; 
+  }
+  .mobile-user-profile{
+    margin-left:-200px;
+  }
+  .logout{
+    margin-left:-280px;
+  }
+  .sales-text{
+    font-size:13px;
+    margin-left:-20px;
+  }
+}
+@media screen and (max-width: 407px){
+  .iconss{
+    margin-left: 200px;
+  }
+  .mobile-user-profile{
+    margin-left:-180px;
+  }
+  .logout{
+    margin-left:-260px;
+  }
+}
+@media screen and (max-width: 397px){
+  .iconss{
+    margin-left: 150px;
+  }
+ 
+}
+
+@media screen and (max-width: 389px){
+  .chart-icon{
+    width: 270px;
+    margin-left:-15px; 
+  }
+  .iconss{
+    margin-left: 110px;
+    font-size: 4.2vmax;
+  }
+  .logo{
+    margin-left:17px;
+  }
+}
+@media screen and (max-width: 361px){
+  .chart-icon{
+    width: 240px;
+    margin-left:-10px; 
+  }
+  .iconss{
+    margin-left: 110px;
+    font-size: 4.2vmax;
+  }
+  .logo{
+    margin-left:17px;
+  }
+  .calc-card {
+    width: 220px;
+    margin:0 auto;
+  }
+  .Right-side-bar {
+    margin-left: -780px;
+}
+.mobile-user-profile{
+  margin-left:-160px;
+}
+.logout{
+  margin-left:-220px;
+}
+}
+@media screen and (max-width: 341px){
+  .chart-icon{
+    width: 220px;
+    margin-left:-10px; 
+  }
+  .calc-card {
+    width: 200px;
+    margin-left:0px
+  }
+  .mobile-user-profile{
+    margin-left:-140px;
+  }
+  .logout{
+    margin-left:-200px;
+  }
+}
+@media screen and (max-width: 329px){
+  .chart-icon{
+    width: 220px;
+    margin-left:-20px; 
+  }
+  .mobile-user-profile{
+    margin-left:-130px;
+  }
+  .logout{
+    margin-left:-195px;
+  }
+}
+@media screen and (max-width: 320px){
+  .chart-icon{
+    width: 220px;
+    margin-left:-20px; 
+  }
+  .mobile-user-profile{
+    margin-left:-120px;
+  }
+  .logout{
+    margin-left:-175px;
+  }
+  .calc-card {
+    width: 200px;
+    margin-left:-10px
+  }
+}

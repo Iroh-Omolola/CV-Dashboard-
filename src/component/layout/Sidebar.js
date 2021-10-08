@@ -43,13 +43,15 @@ const Sidebar = ({ isShow, accountType }) => {
                      </Link>
                 </li>
             </ul>
-            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
-                <li className="nav-link">
-                    <Link to="#" class="nav-link px-0 align-middle">
-                    <img src={dashboardIcon} class="icon" alt="icon"/> <span class="ms-1  d-sm-inline nav-item">Logout</span>
-                     </Link>
-                </li>
-            </ul>
+           <footer className="logout">
+                   <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
+                      <li className="nav-link">
+                            <Link to="#" class="nav-link px-0 align-middle">
+                            <img src={dashboardIcon} class="icon" alt="icon"/> <span class="ms-1  d-sm-inline nav-item">Logout</span> 
+                            </Link>
+                        </li>
+                   </ul>
+          </footer>
         </div>
         </div>
         </div>
@@ -93,7 +95,7 @@ const Sidebar = ({ isShow, accountType }) => {
                              </Link>
                         </li>
                     </ul>
-                  <footer>
+                  <footer className="logout">
                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
                       <li className="nav-link">
                             <Link to="#" class="nav-link px-0 align-middle">
