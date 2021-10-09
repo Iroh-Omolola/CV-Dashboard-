@@ -48,22 +48,22 @@ body{
 
 .high{
   width: 240px;
-  height: 600px !important;
+  height: 800px !important;
   background: white;
   display: block;
 }
 .mobile-high{
-  position:relative;
+  position:absolute;
   transition: all 0.15s;
   width: 240px;
-  height: 100% !important;
+  height: 900px !important;
   background: white;
   display: none;
-  left:-640px;
-  z-index: 9;
+  left:-240px;
+  z-index: 99;
 }
 .shownav{
-  left:-400px;
+  left:0px;
 }
 .nav-item{
   color: #262626 !important;
@@ -171,6 +171,9 @@ color: #888888;
   margin-bottom: 30px;
   background: #FFFFFF;
   border-radius: 10px;
+}
+.agent-calc-body{
+  display: flex;
 }
 .calc-card{
   width: 230px;
@@ -433,6 +436,28 @@ background-size: cover;
 .logout{
   margin-top:100px;
 }
+.transaction-body {
+  width: 75%;
+  margin-left: -450px;
+}
+.transaction-details-body {
+  margin-left: -500px;
+}
+.details-rate {
+  margin-right: 450px;
+}
+.details.details-rate.rls {
+  margin-right:458px;
+}
+.details.details-rate.rls1 {
+  margin-right:462px;
+}
+.details.details-rate.rls2 {
+  margin-right:473px;
+}
+.details.details-rate.rls3 {
+  margin-right:447px;
+}
 }
 
 @media screen and (max-width: 1646px) {
@@ -452,6 +477,10 @@ background-size: cover;
 @media screen and (max-width: 1549px) {
   .calculations {
     margin-left: 160px;
+  }
+  .transaction-body {
+    width: 74%;
+    margin-left: -480px;
   }
 }
 @media screen and (max-width: 1438px) {
@@ -476,6 +505,9 @@ background-size: cover;
   .calculations {
     margin-left: 80px;
   }
+  .transaction-body {
+    width: 73%;
+  }
 }
 @media screen and (max-width: 1318px){
   .calculations {
@@ -485,6 +517,27 @@ background-size: cover;
 @media screen and (max-width: 1300px){
   .calculations {
     margin-left: 20px;
+  }
+  .details-rate {
+    margin-right: 50px;
+}
+.details.details-rate.rls {
+  margin-right:358px;
+}
+.details.details-rate.rls1 {
+  margin-right:362px;
+}
+.details.details-rate.rls2 {
+  margin-right:373px;
+}
+.details.details-rate.rls3 {
+  margin-right:347px;
+}
+}
+
+@media screen and (max-width: 1235px){
+  .transaction-body {
+    margin-left: -500px;
   }
 }
 @media screen and (max-width: 1226px){
@@ -548,16 +601,35 @@ background-size: cover;
 .calculations {
   margin-left: 80px;
 }
+@media screen and (max-width: 1125px){
+
+  .transaction-body {
+    width: 70%;
+  }
+}
 }
 @media screen and (max-width: 1075px){
   .calculations {
     margin-left: 50px;
+  }
+  .details.details-rate.rls {
+    margin-right:228px;
+  }
+  .details.details-rate.rls1 {
+    margin-right:232px;
+  }
+  .details.details-rate.rls2 {
+    margin-right:243px;
+  }
+  .details.details-rate.rls3 {
+    margin-right:217px;
   }
 }
 @media screen and (max-width: 1033px){
   .calculations {
     margin-left: 20px;
   }
+  
 }
 @media screen and (max-width: 988px){
   .calculations {
@@ -567,8 +639,7 @@ background-size: cover;
     display: none ;
   }
   .mobile-high {
-    display: block;
-    
+    display: block; 
   }
   .hamburger{
     visibility: visible;
@@ -597,6 +668,24 @@ background-size: cover;
 .calculations {
   margin-left: 50px;
 }
+.transaction-body {
+  width: 90%;
+}
+.card-transaction {
+  width: 115%;
+  margin-left: -160px;
+}
+.transaction-header {
+  margin-left: -160px;
+  margin-top: 10px;
+}
+.transaction-details {
+  width: 127%;
+  margin-left: -240px;
+}
+.transaction-header.header2 {
+  margin-left: -230px;
+}
 }
 
 @media screen and (max-width: 946px){
@@ -606,6 +695,18 @@ background-size: cover;
   .iconss{
     margin-left: 700px;
   }
+  .card-transaction {
+    margin-left: -150px;
+  }
+  .transaction-header {
+    margin-left: -150px; 
+  }
+.transaction-header.agent-header {
+    margin-left: -150px;
+}
+  .transaction-details {
+    width: 129%;
+}
 }
 @media screen and (max-width: 912px){
   .calculations {
@@ -623,8 +724,16 @@ background-size: cover;
     margin-top:40px;
   }
 }
+
+@media screen and (max-width: 860px){
+  .transaction-body.agent-body {
+    width: 75%;
+}
+.mini-card-calc {
+  width: 210px;
+}
+}
 @media screen and (max-width: 852px){
-  
   .iconss{
     margin-left: 620px;
   }
@@ -632,6 +741,22 @@ background-size: cover;
     width: 220px;
     margin-top:40px;
   }
+  .card-transaction {
+    margin-left: -140px;
+  }
+  .transaction-header {
+    margin-left: -140px; 
+  }
+  .transaction-details {
+    width: 135%;
+}
+.transaction-header.agent-header {
+  margin-left: -140px;
+}
+.transaction-body.agent-body {
+  width: 79%;
+  margin-left: -600px;
+}
 }
 
 @media screen and (max-width: 826px){
@@ -676,14 +801,32 @@ background-size: cover;
   .iconss{
     margin-left: 550px;
   }
+  .card-transaction {
+    margin-left: -130px;
+  }
+  .transaction-header {
+    margin-left: -130px; 
+  }
+  .transaction-details {
+    width: 140%;
 }
-
+}
+@media screen and (max-width: 776px){
+  .transaction-header.agent-header {
+    margin-left: -128px;
+  }
+}
 @media screen and (max-width: 750px){
   .chart-icon{
     width: 350px;
   }
   .iconss{
     margin-left: 530px;
+  }
+}
+@media screen and (max-width: 718px){
+  .iconss{
+    margin-left: 480px;
   }
 }
 @media screen and (max-width: 716px){
@@ -693,8 +836,17 @@ background-size: cover;
   .iconss{
     margin-left: 480px;
   }
+  .card-transaction {
+    margin-left: -120px;
+  }
+  .transaction-header {
+    margin-left: -120px; 
+  }
+  .transaction-details {
+    width: 150%;
 }
-@media screen and (max-width: 670px){
+}
+/* @media screen and (max-width: 670px){
   .chart-icon{
     width: 300px;
   }
@@ -704,7 +856,7 @@ background-size: cover;
   .calculations {
     margin-left: 10px;
   }
-}
+} */
 @media screen and (max-width: 670px){
   .chart-icon{
     width: 300px;
@@ -726,17 +878,89 @@ background-size: cover;
 }
   .chart-icon{
     width: 400px;
-    margin:0 auto;
+    margin-left:20px;
   }
   .calc-card {
     width: 300px;
     margin:0 auto;
   }
+  .details.details-rate.rls {
+    margin-right:128px;
+  }
+  .details.details-rate.rls1 {
+    margin-right:132px;
+  }
+  .details.details-rate.rls2 {
+    margin-right:143px;
+  }
+  .details.details-rate.rls3 {
+    margin-right:117px;
+  }
 }
-@media screen and (max-width: 582px){
+
+@media screen and (max-width: 630px){
+  .card-transaction {
+    margin-left: -100px;
+  }
+  .transaction-header {
+    margin-left: -100px; 
+  }
+  .transaction-details{
+    width: 170%;
+  }
+  .details.details-rate.rls {
+    margin-right:76px;
+  }
+  .details.details-rate.rls1 {
+    margin-right:80px;
+  }
+  .details.details-rate.rls2 {
+    margin-right:91px;
+  }
+  .details.details-rate.rls3 {
+    margin-right:65px;
+  }
+  .transaction-header.agent-header {
+    margin-left: -100px;
+}
+}
+@media screen and (max-width: 626px){
+  .card-title.agent-title.card-title.h5 {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+p.card-text.agent-text.card-text {
+  font-size: 10px;
+}
+}
+@media screen and (max-width: 592px){
   .iconss{
     margin-left: 360px;
   }
+  .agent-calc-body {
+    display: flex!important;
+    flex-direction: column;
+}
+.mini-card-calc {
+  width: 310px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+}
+@media screen and (max-width: 584px){
+  .iconss{
+    margin-left: 360px;
+  }
+  .card-transaction {
+    margin-left: -30px;
+    width: 100%;
+  }
+  .transaction-header {
+    margin-left: -30px;
+  }
+  .transaction-header.agent-header {
+    margin-left: -30px;
+}
 }
 @media screen and (max-width: 575px){
   .iconss{
@@ -758,7 +982,13 @@ background-size: cover;
     margin-left:-410px;
   }
 }
-@media screen and (max-width: 543px){
+@media screen and (max-width: 552px){
+  .chart-icon{
+    width: 400px;
+    margin-left:-20px;
+  }
+}
+@media screen and (max-width: 544px){
   .iconss{
     margin-left: 320px;
   }
@@ -770,6 +1000,26 @@ background-size: cover;
   }
   .logo{
     margin-left:23px;
+  }
+  
+}
+
+
+@media screen and (max-width: 522px){
+  .transaction-details{
+    width: 180%;
+  }
+  .details.details-rate.rls {
+    margin-right:36px;
+  }
+  .details.details-rate.rls1 {
+    margin-right:40px;
+  }
+  .details.details-rate.rls2 {
+    margin-right:51px;
+  }
+  .details.details-rate.rls3 {
+    margin-right:25px;
   }
 }
 @media screen and (max-width: 521px){
@@ -809,6 +1059,27 @@ background-size: cover;
     margin-left:-335px;
   }
 }
+
+@media screen and (max-width: 484px){
+  .transaction-details{
+    width: 200%;
+  }
+  .details.details-rate.rls {
+    margin-right:6px;
+  }
+  .details.details-rate.rls1 {
+    margin-right:10px;
+  }
+  .details.details-rate.rls2 {
+    margin-right:21px;
+  }
+  .details.details-rate.rls3 {
+    margin-right:-5px;
+  }
+  .transaction-details-body {
+    margin-left: -540px;
+}
+}
 @media screen and (max-width: 471px){
   
   .mobile-user-profile{
@@ -817,11 +1088,30 @@ background-size: cover;
   .logout{
     margin-left:-315px;
   }
+  .card-transaction {
+    margin-left: -20px;
+    width: 100%;
+  }
+  .transaction-header {
+    margin-left: -20px;
+  }
+  .transaction-details{
+    width: 205%;
+  }
 }
 @media screen and (max-width: 451px){
   .iconss{
     margin-left: 250px;
   }
+  .transaction-details{
+    width: 217%;
+  }
+}
+
+@media screen and (max-width: 448px){
+  .transaction-header.agent-header {
+    margin-left: -20px;
+}
 }
 @media screen and (max-width: 441px){
  
@@ -846,7 +1136,27 @@ background-size: cover;
     margin-left:-300px;
   }
 }
-@media screen and (max-width: 427px){
+
+@media screen and (max-width: 434px){
+  .transaction-details{
+    width: 225%;
+  }
+  .mini-card-calc {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 430px){
+  .iconss{
+    margin-left: 230px;
+  }
+  .mobile-user-profile{
+    margin-left:-210px;
+  }
+  .logout{
+    margin-left:-280px;
+  }
+}
+@media screen and (max-width: 428px){
   .iconss{
     margin-left: 230px;
   }
@@ -864,6 +1174,19 @@ background-size: cover;
     margin-left:-20px;
   }
 }
+@media screen and (max-width: 410px){
+  .iconss{
+    margin-left: 200px;
+  }
+  .logo{
+    margin-left:15px;
+  }
+}
+@media screen and (max-width: 408px){
+  .logout{
+    margin-left:-260px;
+  }
+}
 @media screen and (max-width: 407px){
   .iconss{
     margin-left: 200px;
@@ -874,6 +1197,14 @@ background-size: cover;
   .logout{
     margin-left:-260px;
   }
+  .transaction-details{
+    width: 245%;
+  }
+}
+@media screen and (max-width: 392px){
+  .logout{
+    margin-left:-244px;
+  }
 }
 @media screen and (max-width: 397px){
   .iconss{
@@ -882,6 +1213,11 @@ background-size: cover;
  
 }
 
+@media screen and (max-width: 390px){
+  .logout{
+    margin-left:-235px;
+  }
+}
 @media screen and (max-width: 389px){
   .chart-icon{
     width: 270px;
@@ -893,6 +1229,24 @@ background-size: cover;
   }
   .logo{
     margin-left:17px;
+  }
+  .transaction-details{
+    width: 285%;
+  }
+  .mini-card-calc {
+    width: 250px;
+  }
+  .transaction-body.agent-body {
+    margin-left: -740px;
+}
+}
+
+@media screen and (max-width: 374px){
+  .mobile-user-profile{
+    margin-left:-160px;
+  }
+  .logout{
+    margin-left:-220px;
   }
 }
 @media screen and (max-width: 361px){
@@ -920,6 +1274,22 @@ background-size: cover;
 .logout{
   margin-left:-220px;
 }
+.transaction-details{
+  width: 330%;
+}
+.mini-card-calc {
+  width: 220px;
+}
+}
+
+@media screen and (max-width: 346px){
+  .transaction-details{
+    width: 360%;
+  }
+  .transaction-body.agent-body {
+    margin-left: -750px;
+}
+
 }
 @media screen and (max-width: 341px){
   .chart-icon{
@@ -930,11 +1300,31 @@ background-size: cover;
     width: 200px;
     margin-left:0px
   }
-  .mobile-user-profile{
-    margin-left:-140px;
+  .card-transaction {
+    margin-left: -15px;
+    width: 100%;
   }
+  .transaction-header {
+    margin-left: -15px;
+  }
+  .mobile-user-profile {
+    margin-left: -130px;
+}
   .logout{
     margin-left:-200px;
+  }
+}
+@media screen and (max-width: 344px){
+.mobile-user-profile {
+  margin-left: -140px;
+}
+.logout{
+  margin-left:-200px;
+}
+}
+@media screen and (max-width: 334px){
+  .transaction-details{
+    width: 400%;
   }
 }
 @media screen and (max-width: 329px){
@@ -948,6 +1338,9 @@ background-size: cover;
   .logout{
     margin-left:-195px;
   }
+  .transaction-details{
+    width: 470%;
+  }
 }
 @media screen and (max-width: 320px){
   .chart-icon{
@@ -955,13 +1348,16 @@ background-size: cover;
     margin-left:-20px; 
   }
   .mobile-user-profile{
-    margin-left:-120px;
+    margin-left:-110px;
   }
   .logout{
-    margin-left:-175px;
+    margin-left:-165px;
   }
   .calc-card {
     width: 200px;
     margin-left:-10px
+  }
+  .transaction-details{
+    width: 470%;
   }
 }
