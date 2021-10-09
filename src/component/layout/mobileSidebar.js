@@ -7,7 +7,6 @@ import user from '../../image/Ellipse 8.png'
 
 const MobileSidebar = ({accountType, isShow}) => {
     const location = useLocation();
-
     return (
         <>
         {accountType==="agent" && (
